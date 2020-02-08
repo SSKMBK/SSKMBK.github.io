@@ -11,5 +11,3 @@ load_sheet = "自分で入力して作る";
 var bmi=weight / (height * height);
 
 var message="あなたのBMIは「"+bmi+"」です。";
-
-alert(message);
