@@ -1,8 +1,12 @@
-var weight;
-weight=prompt("BMIを測定します。まずあなたの体重(kg)を入力してください。");
+var Q1;
+Q1 = "どうやってビンゴを作りますか？";
 
-var height;
-height=prompt("BMIを測定します。次にあなたの身長(m)を入力してください。");
+var new_sheet;
+new_sheet = "ランダムにビンゴを作る";
+
+var load_sheet;
+load_sheet = "自分で入力して作る";
+
 
 var bmi=weight / (height * height);
 
