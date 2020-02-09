@@ -33,8 +33,6 @@ function randomise(){
     var weapon_sheet5 = weapon_list[sheet5];
     weapon_list.splice(sheet5, 1);
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
     var sheet6 = Math.floor(Math.random() * weapon_list.length)
     var weapon_sheet6 = weapon_list[sheet6];
     weapon_list.splice(sheet6, 1);
@@ -55,8 +53,9 @@ function randomise(){
     var weapon_sheet10 = weapon_list[sheet10];
     weapon_list.splice(sheet10, 1);
 
-    var weapon_sheet11 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet11, 1);
+    var sheet11 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet11 = weapon_list[sheet11];
+    weapon_list.splice(sheet11, 1);
 
     var weapon_sheet12 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
     weapon_list.splice(weapon_sheet12, 1);
