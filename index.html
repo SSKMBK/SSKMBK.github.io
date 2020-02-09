@@ -4,13 +4,23 @@
   <meta charset="UTF-8">
   <title>Salmon-BINGO</title>
 </head>
-  
+
 <body>
   
-  <p>サーモンビンゴ作成機 Pre-Alpha_0.1.1</p>
+  <p>サーモンビンゴ作成機 Pre-Alpha_0.1.2</p>
+
+  <p>Pre-Alpha_0.1.1</p>
   <p>weapon24が存在しないエラーを修正</p>
+
+  <p>Pre-Alpha_0.1.2</p>p>
+  <p>一度押した作成ボタンを押せないように</p>
+  <p>リセット(リロード)ボタン追加</p>
   
-  <button onClick="randomise();">作成</button>
+  <button type="submit" name="create" onClick="randomise();this.disabled=true;">作成</button>
+  <button type="submit" name="reload" onclick="window.location.reload()">リセット</button>
+
+  <div id="reload" style="margin: iem;""></div>
+
   <div id="weapon0" style="margin: 1em;"></div>
   <div id="weapon1" style="margin: 1em;"></div>
   <div id="weapon2" style="margin: 1em;"></div>
