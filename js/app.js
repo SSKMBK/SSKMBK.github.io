@@ -57,44 +57,53 @@ function randomise(){
     var weapon_sheet11 = weapon_list[sheet11];
     weapon_list.splice(sheet11, 1);
 
-    var weapon_sheet12 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet12, 1);
+    var sheet12 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet12 = weapon_list[sheet12];
+    weapon_list.splice(sheet12, 1);
 
-    var weapon_sheet13 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet13, 1);
+    var sheet13 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet13 = weapon_list[sheet13];
+    weapon_list.splice(sheet13, 1);
 
-    var weapon_sheet14 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet14, 1);
+    var sheet14 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet14 = weapon_list[sheet14];
+    weapon_list.splice(sheet14, 1);
 
+    var sheet15 = Math.floor(Math.random() * weapon_list.length)
     var weapon_sheet15 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet15, 1);
+    weapon_list.splice(sheet15, 1);
 
-    var weapon_sheet16 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet16, 1);
+    var sheet16 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet16 = weapon_list[sheet16];
+    weapon_list.splice(sheet16, 1);
 
-    var weapon_sheet17 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet17, 1);
+    var sheet17 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet17 = weapon_list[sheet17];
+    weapon_list.splice(sheet17, 1);
 
-    var weapon_sheet18 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet18, 1);
+    var sheet18 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet18 = weapon_list[sheet18];
+    weapon_list.splice(sheet18, 1);
 
-    var weapon_sheet19 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet19, 1);
+    var sheet19 = Math.floor(Math.random() * weapon_list.length)   
+    var weapon_sheet19 = weapon_list[sheet19];
+    weapon_list.splice(sheet19, 1);
 
-    var weapon_sheet20 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet20, 1);
+    var sheet20 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet20 = weapon_list[sheet20];
+    weapon_list.splice(sheet20, 1);
 
-    var weapon_sheet21 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet21, 1);
+    var sheet21 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet21 = weapon_list[sheet21];
+    weapon_list.splice(sheet21, 1);
 
-    var weapon_sheet22 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet22, 1);
+    var sheet22= Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet22 = weapon_list[sheet22];
+    weapon_list.splice(sheet22, 1);
 
-    var weapon_sheet23 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet23, 1);
-
-    var weapon_sheet24 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(weapon_sheet24, 1);
+    var sheet23 = Math.floor(Math.random() * weapon_list.length)
+    var weapon_sheet23 = weapon_list[sheet23];
+    weapon_list.splice(sheet23, 1);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // あと作成ボタンの削除
