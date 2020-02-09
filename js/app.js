@@ -214,4 +214,3 @@ function randomise(){
     document.getElementById( "weapon23" ).appendChild( weaponButton23 );
 
 }
-
