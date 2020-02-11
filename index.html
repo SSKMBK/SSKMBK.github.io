@@ -3,83 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <title>Salmon-BINGO</title>
+  <link rel="stylesheet" type="text/css" href="css/app.css" />
+
+  <meta name="viewport"
+   content="width=320,
+      height=480,
+      initial-scale=1.0,
+      minimum-scale=1.0,
+      maximum-scale=1.0,
+      user-scalable=no" />
+
 </head>
 
 <body>
+  <div class="GRID">
+
+
+    <version id="version">サーモンビンゴ作成機<br>Pre-Alpha_0.1.5</version>
+
+<textarea id="update" rows="10" cols=60 readonly>
+☆Pre-Alpha_0.1.1
+武器重複をなくした(はず)
   
-  <p>サーモンビンゴ作成機 Pre-Alpha_0.1.4</p>
-
-  <textarea name="update" rows="10" cols="60" readonly>
-  Pre-Alpha_0.1.1
-  武器重複をなくした(はず)
-
-  Pre-Alpha_0.1.2
-  一度押した作成ボタンを押せないように＆リセットボタン追加
-
-  Pre-Alpha_0.1.3
-  作成ボタンを押したらリセットボタンに変身するようになった
-
-  Pre-Alpha_0.1.4
-  ボックスが初めから表示されるようになった
-  更新報告欄がかっこいい感じになった
-
-  </textarea>
+☆Pre-Alpha_0.1.2
+一度押した作成ボタンを押せないように
+リセットボタンを追加
   
-  <button type="submit" name="create" onClick="randomise();this.remove();createreload()">作成</button>
+☆Pre-Alpha_0.1.3
+作成ボタンを押したらリセットボタンに変身するようになった
+  
+☆Pre-Alpha_0.1.4
+ビンゴ表の枠が最初から表示されるようになった
+更新報告欄がかっこいい感じになった
+  
+☆Pre-Alpha_0.1.5
+画面に合わせたページサイズで表示されるようになった
+ビンゴ表を成形した
+  
+</textarea>
+    
+    <button type="submit" id="create" onClick="randomise();createreload()">作成</button>
+  
+    <div id="reload"></div>
+  
+    <button type="submit" id="weapon0" class="buttons"></button>
+    <button type="submit" id="weapon1" class="buttons"></button>
+    <button type="submit" id="weapon2" class="buttons"></button>
+    <button type="submit" id="weapon3" class="buttons"></button>
+    <button type="submit" id="weapon4" class="buttons"></button>
+    <button type="submit" id="weapon5" class="buttons"></button>
+    <button type="submit" id="weapon6" class="buttons"></button>
+    <button type="submit" id="weapon7" class="buttons"></button>
+    <button type="submit" id="weapon8" class="buttons"></button>
+    <button type="submit" id="weapon9" class="buttons"></button>
+    <button type="submit" id="weapon10" class="buttons"></button>
+    <button type="submit" id="weapon11" class="buttons"></button>
+    <button type="submit" id="bear_weapon" class="buttons">クマ武器</button>
+    <button type="submit" id="weapon12" class="buttons"></button>
+    <button type="submit" id="weapon13" class="buttons"></button>
+    <button type="submit" id="weapon14" class="buttons"></button>
+    <button type="submit" id="weapon15" class="buttons"></button>
+    <button type="submit" id="weapon16" class="buttons"></button>
+    <button type="submit" id="weapon17" class="buttons"></button>
+    <button type="submit" id="weapon18" class="buttons"></button>
+    <button type="submit" id="weapon19" class="buttons"></button>
+    <button type="submit" id="weapon20" class="buttons"></button>
+    <button type="submit" id="weapon21" class="buttons"></button>
+    <button type="submit" id="weapon22" class="buttons"></button>
+    <button type="submit" id="weapon23" class="buttons"></button>
+  
+  
+    <div id="weapon0" style="position:absolute; left:0px;top:0px"></div>
+  </div>
 
-  <div id="reload" style="margin: iem;""></div>
-
-  <button type="submit" id="weapon0"></button>
-  <button type="submit" id="weapon1"></button>
-  <button type="submit" id="weapon2"></button>
-  <button type="submit" id="weapon3"></button>
-  <button type="submit" id="weapon4"></button>
-  <button type="submit" id="weapon5"></button>
-  <button type="submit" id="weapon6"></button>
-  <button type="submit" id="weapon7"></button>
-  <button type="submit" id="weapon8"></button>
-  <button type="submit" id="weapon9"></button>
-  <button type="submit" id="weapon10"></button>
-  <button type="submit" id="weapon11"></button>
-  <button type="submit" id="weapon12"></button>
-  <button type="submit" id="weapon13"></button>
-  <button type="submit" id="weapon14"></button>
-  <button type="submit" id="weapon15"></button>
-  <button type="submit" id="weapon16"></button>
-  <button type="submit" id="weapon17"></button>
-  <button type="submit" id="weapon18"></button>
-  <button type="submit" id="weapon19"></button>
-  <button type="submit" id="weapon20"></button>
-  <button type="submit" id="weapon21"></button>
-  <button type="submit" id="weapon22"></button>
-  <button type="submit" id="weapon23"></button>
-  <button type="submit" id="bear_weapon">クマ武器</button>
 
 
-  <div id="weapon0" style="margin: 1em;"></div>
-  <div id="weapon1" style="margin: 1em;"></div>
-  <div id="weapon2" style="margin: 1em;"></div>
-  <div id="weapon3" style="margin: 1em;"></div>
-  <div id="weapon4" style="margin: 1em;"></div>
-  <div id="weapon5" style="margin: 1em;"></div>
-  <div id="weapon6" style="margin: 1em;"></div>
-  <div id="weapon7" style="margin: 1em;"></div>
-  <div id="weapon8" style="margin: 1em;"></div>
-  <div id="weapon9" style="margin: 1em;"></div>
-  <div id="weapon10" style="margin: 1em;"></div>
-  <div id="weapon11" style="margin: 1em;"></div>
-  <div id="weapon12" style="margin: 1em;"></div>
-  <div id="weapon13" style="margin: 1em;"></div>
-  <div id="weapon14" style="margin: 1em;"></div>
-  <div id="weapon15" style="margin: 1em;"></div>
-  <div id="weapon16" style="margin: 1em;"></div>
-  <div id="weapon17" style="margin: 1em;"></div>
-  <div id="weapon18" style="margin: 1em;"></div>
-  <div id="weapon19" style="margin: 1em;"></div>
-  <div id="weapon20" style="margin: 1em;"></div>
-  <div id="weapon21" style="margin: 1em;"></div>
-  <div id="weapon22" style="margin: 1em;"></div>
-  <div id="weapon23" style="margin: 1em;"></div>
 
   <script src="js/app.js"></script>
   <script src="js/reloadbutton.js"></script>
