@@ -105,112 +105,82 @@ function randomise(){
     var weapon_sheet23 = weapon_list[sheet23];
     weapon_list.splice(sheet23, 1);
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// あと作成ボタンの削除
-
     var weapons = [weapon_sheet0,weapon_sheet1,weapon_sheet2,weapon_sheet3,weapon_sheet4,
     weapon_sheet5,weapon_sheet6,weapon_sheet7,weapon_sheet8,weapon_sheet9,weapon_sheet10,
     weapon_sheet11,weapon_sheet12,weapon_sheet13,weapon_sheet14,weapon_sheet15,weapon_sheet16,
     weapon_sheet17,weapon_sheet18,weapon_sheet19,weapon_sheet20,weapon_sheet21,weapon_sheet22,
     weapon_sheet23];
 
-
-
-    var weaponButton0 = document.createElement( "BUTTON" );
-    weaponButton0.textContent = weapon_sheet0;
+    var weaponButton0=document.createTextNode(weapon_sheet0)
     document.getElementById( "weapon0" ).appendChild( weaponButton0 );
 
-    var weaponButton1 = document.createElement( "BUTTON" );
-    weaponButton1.textContent = weapon_sheet1;
+    var weaponButton1=document.createTextNode(weapon_sheet1)
     document.getElementById( "weapon1" ).appendChild( weaponButton1 );
 
-    var weaponButton2 = document.createElement( "BUTTON" );
-    weaponButton2.textContent = weapon_sheet2;
+    var weaponButton2=document.createTextNode(weapon_sheet2)
     document.getElementById( "weapon2" ).appendChild( weaponButton2 );
 
-
-    var weaponButton3 = document.createElement( "BUTTON" );
-    weaponButton3.textContent = weapon_sheet3;
+    var weaponButton3=document.createTextNode(weapon_sheet3)
     document.getElementById( "weapon3" ).appendChild( weaponButton3 );
 
-    var weaponButton4 = document.createElement( "BUTTON" );
-    weaponButton4.textContent = weapon_sheet4;
+    var weaponButton4=document.createTextNode(weapon_sheet4)
     document.getElementById( "weapon4" ).appendChild( weaponButton4 );
 
-    var weaponButton5 = document.createElement( "BUTTON" );
-    weaponButton5.textContent = weapon_sheet5;
+    var weaponButton5=document.createTextNode(weapon_sheet5)
     document.getElementById( "weapon5" ).appendChild( weaponButton5 );
 
-    var weaponButton6 = document.createElement( "BUTTON" );
-    weaponButton6.textContent = weapon_sheet6;
+    var weaponButton6=document.createTextNode(weapon_sheet6)
     document.getElementById( "weapon6" ).appendChild( weaponButton6 );
 
-    var weaponButton7 = document.createElement( "BUTTON" );
-    weaponButton7.textContent = weapon_sheet7;
+    var weaponButton7=document.createTextNode(weapon_sheet7)
     document.getElementById( "weapon7" ).appendChild( weaponButton7 );
 
-    var weaponButton8 = document.createElement( "BUTTON" );
-    weaponButton8.textContent = weapon_sheet8;
+    var weaponButton8=document.createTextNode(weapon_sheet8)
     document.getElementById( "weapon8" ).appendChild( weaponButton8 );
 
-    var weaponButton9 = document.createElement( "BUTTON" );
-    weaponButton9.textContent = weapon_sheet9;
+    var weaponButton9=document.createTextNode(weapon_sheet9)
     document.getElementById( "weapon9" ).appendChild( weaponButton9 );
 
-    var weaponButton10 = document.createElement( "BUTTON" );
-    weaponButton10.textContent = weapon_sheet10;
+    var weaponButton10=document.createTextNode(weapon_sheet10)
     document.getElementById( "weapon10" ).appendChild( weaponButton10 );
 
-    var weaponButton11 = document.createElement( "BUTTON" );
-    weaponButton11.textContent = weapon_sheet11;
+    var weaponButton11=document.createTextNode(weapon_sheet11)
     document.getElementById( "weapon11" ).appendChild( weaponButton11 );
 
-    var weaponButton12= document.createElement( "BUTTON" );
-    weaponButton12.textContent = weapon_sheet12;
+    var weaponButton12=document.createTextNode(weapon_sheet12)
     document.getElementById( "weapon12" ).appendChild( weaponButton12 );
 
-    var weaponButton13= document.createElement( "BUTTON" );
-    weaponButton13.textContent = weapon_sheet13;
+    var weaponButton13=document.createTextNode(weapon_sheet13)
     document.getElementById( "weapon13" ).appendChild( weaponButton13 );
 
-    var weaponButton14= document.createElement( "BUTTON" );
-    weaponButton14.textContent = weapon_sheet14;
+    var weaponButton14=document.createTextNode(weapon_sheet14)
     document.getElementById( "weapon14" ).appendChild( weaponButton14 );
 
-    var weaponButton15= document.createElement( "BUTTON" );
-    weaponButton15.textContent = weapon_sheet15;
+    var weaponButton15=document.createTextNode(weapon_sheet15)
     document.getElementById( "weapon15" ).appendChild( weaponButton15 );
 
-    var weaponButton16= document.createElement( "BUTTON" );
-    weaponButton16.textContent = weapon_sheet16;
+    var weaponButton16=document.createTextNode(weapon_sheet16)
     document.getElementById( "weapon16" ).appendChild( weaponButton16 );
 
-    var weaponButton17= document.createElement( "BUTTON" );
-    weaponButton17.textContent = weapon_sheet17;
+    var weaponButton17=document.createTextNode(weapon_sheet17)
     document.getElementById( "weapon17" ).appendChild( weaponButton17 );
 
-    var weaponButton18= document.createElement( "BUTTON" );
-    weaponButton18.textContent = weapon_sheet18;
+    var weaponButton18=document.createTextNode(weapon_sheet18)
     document.getElementById( "weapon18" ).appendChild( weaponButton18 );
 
-    var weaponButton19= document.createElement( "BUTTON" );
-    weaponButton19.textContent = weapon_sheet19;
+    var weaponButton19=document.createTextNode(weapon_sheet19)
     document.getElementById( "weapon19" ).appendChild( weaponButton19 );
 
-    var weaponButton20= document.createElement( "BUTTON" );
-    weaponButton20.textContent = weapon_sheet20;
+    var weaponButton20=document.createTextNode(weapon_sheet20)
     document.getElementById( "weapon20" ).appendChild( weaponButton20 );
 
-    var weaponButton21= document.createElement( "BUTTON" );
-    weaponButton21.textContent = weapon_sheet21;
+    var weaponButton21=document.createTextNode(weapon_sheet21)
     document.getElementById( "weapon21" ).appendChild( weaponButton21 );
 
-    var weaponButton22= document.createElement( "BUTTON" );
-    weaponButton22.textContent = weapon_sheet22;
+    var weaponButton22=document.createTextNode(weapon_sheet22)
     document.getElementById( "weapon22" ).appendChild( weaponButton22 );
 
-    var weaponButton23= document.createElement( "BUTTON" );
-    weaponButton23.textContent = weapon_sheet23;
+    var weaponButton23=document.createTextNode(weapon_sheet23)
     document.getElementById( "weapon23" ).appendChild( weaponButton23 );
 
 }
