@@ -9,6 +9,8 @@ function randomise(){
     "キャンピングシェルター","スパイガジェット","スプラローラー","カーボンローラー","ヴァリアブルローラー","ダイナモローラー","パブロ",
     "ホクサイ"];
 
+    //length=配列の要素数取得
+    //splice=要素の取り除き
     var sheet0 = Math.floor(Math.random() * weapon_list.length)
     var weapon_sheet0 = weapon_list[sheet0];
     weapon_list.splice(sheet0, 1);
@@ -113,7 +115,7 @@ function randomise(){
 
     var weaponButton0=document.createTextNode(weapon_sheet0)
     document.getElementById( "weapon0" ).appendChild( weaponButton0 );
-
+    
     var weaponButton1=document.createTextNode(weapon_sheet1)
     document.getElementById( "weapon1" ).appendChild( weaponButton1 );
 
