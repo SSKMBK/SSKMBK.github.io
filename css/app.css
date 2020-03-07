@@ -29,7 +29,7 @@
   grid-row-end: 3;
 }
 
-.buttons{
+button.buttons{
   color:black;
   background:white;
   width:18vw;
