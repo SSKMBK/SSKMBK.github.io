@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
   <meta charset="UTF-8">
   <title>Salmon-BINGO</title>
   <link rel="stylesheet" type="text/css" href="css/app.css" />
@@ -12,9 +13,6 @@
   minimum-scale=1.0,
   maximum-scale=1.0,
   user-scalable=no">
-
-  
-
 
 </head>
 
@@ -29,17 +27,25 @@
   <div class="GRID">
 
 
-    <version id="version">サーモンビンゴ作成機<br>Alpha_0.1.3</version>
+    <version id="version">サーモンビンゴ作成機<br>β_0.1.5</version>
   
 <textarea id="update" rows="10" cols=60 readonly>
 <更新履歴＆注意書き>
-※リセットを押すとビンゴ表すべてがリセットされます
 ※正常に表示されない場合、キャッシュの削除をお試しください
+
+☆β_0.1.5 2020-05-30
+・データの保存、復元、削除がちゃんとできるようになった
+・保存済みデータの見やすさが少しましになった
+・作成ボタンや復元ボタンでそのまま内容を書き換えられるようになったので、リロードボタンはなくなった
+
+☆Alpha_0.1.4_pre 2020-05-30
+データの保存、復元ができるようになった
+データ削除、書き換え機能などはまだないです
 
 ☆Alpha_0.1.1~3
 軽微なバグ修正
 更新履歴＆注意書き欄に書き加え
-
+                                 
 ☆Alpha_0.1.0
 ボタンを押したら色が変わるようになった
 白→橙→白→橙
@@ -62,7 +68,7 @@
 ☆Pre-Alpha_0.1.1
 武器重複をなくした(はず)</textarea>
     
-    <button type="submit" id="create" onClick="randomise();createreload()">作成</button>
+    <button type="submit" id="create" onClick="randomise()">作成</button>
   
     <div id="reload"></div>
   
@@ -91,10 +97,29 @@
     <button type="submit" id="weapon21" class="buttons" onClick="onclick_color(style,'weapon21')"></button>
     <button type="submit" id="weapon22" class="buttons" onClick="onclick_color(style,'weapon22')"></button>
     <button type="submit" id="weapon23" class="buttons" onClick="onclick_color(style,'weapon23')"></button>
-  
-  
-    <div id="weapon0" style="position:absolute; left:0px;top:0px"></div>
 
+    
+    <button type="submit" id="save" onClick="savebutton()">保存</button>
+    <button type="submit" id="restoration" onClick="restorationbutton()">復元</button>
+    <button type="submit" id="delete" onClick="deletebutton()">保存データ</br>の削除</button>
+  
+    <textarea id="save_weapondata" rows="10" cols=60 readonly></textarea>
+    <script type="text/javascript">
+
+      var local_list=JSON.parse(localStorage.getItem('salmonrandomweapondata_storage'))
+
+      list_message = "[保存済みデータ]\n"+local_list[0]+","+local_list[1]+","+local_list[2]+","+local_list[3]
+      +","+local_list[4]+","+local_list[5]+","+local_list[6]+","+local_list[7]+","+local_list[8]+","
+      +local_list[9]+","+local_list[10]+","+local_list[11]+","+local_list[12]+","+local_list[13]+","
+      +local_list[14]+","+local_list[15]+","+local_list[16]+","+local_list[17]+","+local_list[18]+","
+      +local_list[19]+","+local_list[20]+","+local_list[21]+","+local_list[22]+","+local_list[23];
+
+      document.getElementById("save_weapondata").innerHTML=list_message;
+
+    </script>
+
+
+    <div id="weapon0" style="position:absolute; left:0px;top:0px"></div>
   </div>
   <!-- grid終了のdiv -->
 
