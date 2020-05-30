@@ -1,7 +1,7 @@
 .GRID {
   display: grid;
   grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
-  grid-template-rows: 9vw 9vw 9vw 9vw 9vw;
+  grid-template-rows: 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw;
 }
 
 #version{
@@ -27,6 +27,42 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+#restoration{
+  color:black;
+  background:white;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+#save{
+  color:black;
+  background:white;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+#delete{
+  color:black;
+  background:white;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+#save_weapondata{
+
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 14;
+  grid-row-end: 15;
+
 }
 
 .buttons{
